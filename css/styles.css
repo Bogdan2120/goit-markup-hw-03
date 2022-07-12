@@ -1,0 +1,213 @@
+:root {
+  --text-color: #757575;
+  --text-color-header: #212121;
+  --text-color-hover: #2196f3;
+  --text-font: Roboto, sens-sarif;
+}
+body {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 14px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-header);
+}
+/*HEADER*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-color-header);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--text-color-hover);
+}
+
+.head-address {
+  list-style: none;
+}
+
+.head-address-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.head-address-link:hover,
+.head-address-link:focus {
+  color: var(--text-color-hover);
+}
+
+/*------Index Main----*/
+
+/*HERO*/
+.hero {
+  background-color: #2f303a; /*щоб було видно білий текст*/
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #2195f390;
+}
+
+/*ABOUT*/
+.skills {
+  list-style: none;
+}
+
+.skill-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-header);
+}
+
+.skill-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*OUR WORKS*/
+.works {
+  list-style: none;
+}
+
+/*COMMAND STUDIO*/
+.command {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  list-style: none;
+}
+
+.command-item-name {
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+  color: var(--text-color-header);
+}
+
+/*------PORTFOLIO MAIN----*/
+/*Filters*/
+.filters {
+  list-style: none;
+}
+
+.filter-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--text-color-header);
+  background: #f5f4fa;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*Portfolio*/
+.portfolio {
+  list-style: none;
+}
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color-header);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*------Footer----*/
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+.address {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: rgb(255, 255, 255);
+}
