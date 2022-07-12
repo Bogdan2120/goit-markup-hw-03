@@ -1,24 +1,52 @@
 :root {
   --text-color: #757575;
-  --text-color-header: #212121;
+  --text-color-accent: #212121;
+  --color-logo-accent: #2196f3;
   --text-color-hover: #2196f3;
   --text-font: Roboto, sens-sarif;
 }
+
 body {
   color: var(--text-color);
   font-family: var(--text-font);
   font-size: 14px;
 }
+
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
 }
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*HEADER*/
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -29,19 +57,27 @@ body {
 }
 
 .logo span {
-  color: #2196f3;
+  color: var(--color-logo-accent);
 }
 
 .menu {
-  list-style: none;
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
 }
 
 .menu-link:hover,
@@ -50,10 +86,19 @@ body {
 }
 
 .head-address {
-  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.head-address-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .head-address-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -95,7 +140,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  background: #2195f390;
+  background: #188ce8;
 }
 
 /*ABOUT*/
@@ -109,7 +154,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
 }
 
 .skill-text {
@@ -135,7 +180,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
 }
 
 /*------PORTFOLIO MAIN----*/
@@ -152,7 +197,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
   background: #f5f4fa;
 }
 
@@ -177,7 +222,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-color-header);
+  color: var(--text-color-accent);
 }
 
 .portfolio-text {
