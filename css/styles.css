@@ -13,6 +13,9 @@ body {
 }
 
 .title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -23,6 +26,11 @@ body {
 .list {
   list-style: none;
   padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
 }
 
 .container {
@@ -33,7 +41,7 @@ body {
   padding-right: 15px;
 }
 
-/*HEADER*/
+/*=============== HEADER ===============*/
 .container-header {
   display: flex;
   align-items: center;
@@ -111,14 +119,26 @@ body {
   color: var(--text-color-hover);
 }
 
-/*------Index Main----*/
+/* =============== /HEADER =============== */
 
-/*HERO*/
+/*--------------------------------INDEX MAIN--------------------------------*/
+
+/*=============== HERO ===============*/
 .hero {
+  min-height: 600px;
+  padding-top: 200px;
+
   background-color: #2f303a; /*щоб було видно білий текст*/
 }
 
 .hero-title {
+  max-width: 700px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -129,12 +149,22 @@ body {
 }
 
 .hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
   color: #ffffff;
 }
 
@@ -142,10 +172,25 @@ body {
 .hero-button:focus {
   background: #188ce8;
 }
+/*=============== /HERO ===============*/
 
-/*ABOUT*/
+/*=============== ABOUT ===============*/
+.about {
+  padding-top: 94px;
+}
+.about-title {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
 .skills {
-  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+.skill {
+  width: calc((100% - 90px) / 4);
 }
 
 .skill-title {
@@ -161,27 +206,89 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/*=============== /ABOUT ===============*/
 
-/*OUR WORKS*/
-.works {
-  list-style: none;
+/*=============== OUR WORKS ===============*/
+.our-works {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-/*COMMAND STUDIO*/
+.our-works-title {
+  margin-bottom: 50px;
+}
+
+.works {
+  display: flex;
+  column-gap: 30px;
+}
+
+.work {
+  width: calc((100% - 60px) / 3);
+}
+
+.work-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*=============== /OUR WORKS ===============*/
+
+/*=============== COMAND-STUDIO ===============*/
+.command-studio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.command-studio-title {
+  margin-bottom: 50px;
+}
+
 .command {
+  display: flex;
+  column-gap: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  list-style: none;
+}
+
+.command-item {
+  width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.command-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .command-item-name {
-  font-size: 16px;
-  line-height: 1.19;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   color: var(--text-color-accent);
 }
+
+.command-item-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+/*=============== /COMAND-STUDIO ===============*/
+
+/*-------------------------------- /INDEX MAIN --------------------------------*/
 
 /*------PORTFOLIO MAIN----*/
 /*Filters*/
@@ -234,10 +341,17 @@ body {
 
 /*------Footer----*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
-.logo-footer {
+.logo.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+
   color: #ffffff;
 }
 .address {
@@ -247,11 +361,21 @@ body {
   color: #ffffff;
 }
 
+.address-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 9px;
+}
+
 .address-link {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
+.communication-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .address-link:hover,
 .address-link:focus {
   color: rgb(255, 255, 255);
