@@ -59,9 +59,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-accent);
 }
+
 .list {
   list-style: none;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -73,6 +75,10 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /*=============== HEADER ===============*/
@@ -94,7 +100,6 @@ body {
   font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: #000000;
 }
 
@@ -115,7 +120,6 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--text-color-accent);
 }
 
@@ -138,7 +142,6 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--text-color);
 }
 
@@ -344,10 +347,6 @@ body {
   width: calc((100% - 60px) / 3);
 }
 
-.portfolio-link {
-  text-decoration: none;
-}
-
 .portfolio-img {
   width: 100%;
   height: auto;
@@ -412,7 +411,6 @@ body {
 .address-link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 
 .communication-item:not(:last-child) {
